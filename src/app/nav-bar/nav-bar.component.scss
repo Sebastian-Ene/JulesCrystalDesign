@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  padding: 0em;
+}
+img {
+  margin: 10px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 70px;
+}
+.button {
+  position: absolute;
+  right: 0px;
+  margin-top: 65px;
+  border: none;
+
+  a {
+    background-color: #8a87a6;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 10px;
+
+    &:hover {
+      background-color: rgb(53, 13, 44);
+      color: rgb(145, 41, 122);
+      position: relative;
+      border: none;
+      border-radius: 1em;
+    }
+  }
+}
