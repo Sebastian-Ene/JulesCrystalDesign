@@ -1,11 +1,28 @@
 <div class="container">
   <a routerLink="">
-    <img src="assets/Logo2e.jpeg" alt="Logo" width="125" height="125"
+    <img src="assets/Logof.jpeg" alt="Logo" width="190" height="114"
   /></a>
   <div class="button">
-    <a routerLink="/about">about</a>
-    <a routerLink="/art">art</a>
-    <a class="Find me" href="">Find me</a>
+    <a routerLink="/about">My Story</a>
+    <a routerLink="/art">Art for the heart</a>
+    <a class="findme" (click)="showSocials()">Find me</a>
   </div>
+</div>
+
+<div class="drop" [style.display]="view">
+  <ul>
+    <li>
+      <a href="https://www.instagram.com/jules.crystal.design/?hl=ro"
+        >Instagram
+      </a>
+    </li>
+    <li><a href="https://www.breslo.ro/JulesCrystalDesign">Breslo </a></li>
+    <li>
+      <a href="https://www.etsy.com/shop/JulesCrystalDesign?ref=ss_profile"
+        >Etsy
+      </a>
+    </li>
+    <li><a>jules.crystaldesign@gmail.com </a></li>
+  </ul>
 </div>
 <router-outlet></router-outlet>
