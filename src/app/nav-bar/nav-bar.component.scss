@@ -32,19 +32,22 @@ img {
   top: 7.15em;
   right: 0px;
   background-color: #e0e0e0;
+  transition: ease-in 0.5;
   ul {
     list-style: none;
     margin: 0em;
     padding: 0em;
+    li {
+      &:hover {
+        width: 100%;
+        background-color: #8a87a6;
+      }
+    }
     a {
       text-decoration: none;
       color: rgb(20, 20, 20);
       display: inline-block;
       padding: 3.1em 2.65em;
-      &:hover {
-        width: 100%;
-        background-color: #8a87a6;
-      }
     }
   }
 }

@@ -1,24 +1,44 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutComponent } from '../about/about.component';
 import { ArtComponent } from '../art/art.component';
-import { NONE_TYPE } from '@angular/compiler';
+import {
+  trigger,
+  animate,
+  style,
+  transition,
+  state,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss'],
+  animations: [
+    trigger('disp_bar', [
+      state(
+        'hide_bar',
+        style({
+          transform: 'translate(18em,0em)',
+          opacity: '0',
+        })
+      ),
+      state(
+        'show_bar',
+        style({ transform: 'translate(0em,0em)', opacity: '1' })
+      ),
+      transition('show_bar <=> hide_bar', [animate('0.30s ease-out')]),
+    ]),
+  ],
 })
 export class NavBarComponent implements OnInit {
   constructor() {}
-  view = 'none';
-  showSocials() {
-    if (this.view === 'block') {
-      this.view = 'none';
-      return this.view;
-    } else {
-      this.view = 'block';
-      return this.view;
-    }
+
+  isOpen = false;
+
+  toggle() {
+    this.isOpen = !this.isOpen;
+    console.log(this.isOpen);
   }
+
   ngOnInit(): void {}
 }

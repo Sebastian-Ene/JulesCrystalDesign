@@ -5,11 +5,11 @@
   <div class="button">
     <a routerLink="/about">My Story</a>
     <a routerLink="/art">Art for the heart</a>
-    <a class="findme" (click)="showSocials()">Find me</a>
+    <a class="findme" (click)="toggle()">Find me</a>
   </div>
 </div>
 
-<div class="drop" [style.display]="view">
+<div class="drop" [@disp_bar]="isOpen ? 'show_bar' : 'hide_bar'">
   <ul>
     <li>
       <a href="https://www.instagram.com/jules.crystal.design/?hl=ro"
