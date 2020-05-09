@@ -1,8 +1,29 @@
-div {
-  margin: 7em 17em;
+.container {
+  padding: 7em 14em;
   color: whitesmoke;
   text-align: justify;
+  max-width: max-content;
   h1 {
     padding-top: 1em;
+  }
+  .slide {
+    position: relative;
+    z-index: 1;
+    img {
+      display: block;
+      margin: 0em auto;
+      max-width: 100%;
+      height: auto;
+    }
+    button {
+      position: absolute;
+      right: 0px;
+      top: 10em;
+      z-index: 5;
+    }
+    p {
+      position: absolute;
+      bottom: 5em;
+    }
   }
 }
