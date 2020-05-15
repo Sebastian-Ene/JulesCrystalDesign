@@ -7,6 +7,10 @@
 img {
   position: absolute;
   z-index: 1;
+  @media (max-width: 425px) {
+    width: 9em;
+    height: 6em;
+  }
 }
 .button {
   position: absolute;
@@ -24,6 +28,9 @@ img {
     &:hover {
       background-color: #8a87a6;
       color: rgb(235, 235, 235);
+    }
+    @media (max-width: 425px) {
+      padding: 3em 0.7em;
     }
   }
 }

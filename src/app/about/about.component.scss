@@ -1,5 +1,11 @@
 div {
-  margin: 8em 12em;
+  margin: 8em 14em;
   color: white;
   text-align: justify;
+  @media (max-width: 768px) {
+    margin: 8em 7em 0em 7em;
+  }
+  @media (max-width: 425px) {
+    margin: 8em 1em 0em 1em;
+  }
 }

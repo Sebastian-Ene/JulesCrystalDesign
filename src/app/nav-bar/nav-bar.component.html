@@ -1,10 +1,15 @@
 <div class="container">
   <a routerLink="">
-    <img src="assets/Logof.jpeg" alt="Logo" width="190" height="114"
+    <img
+      src="assets/Logof.jpeg"
+      (click)="routch()"
+      alt="Logo"
+      width="190"
+      height="114"
   /></a>
   <div class="button">
-    <a routerLink="/about">My Story</a>
-    <a routerLink="/art">Art for the heart</a>
+    <a routerLink="/about" (click)="routch()">My Story</a>
+    <a routerLink="/art" (click)="routch()">Craft</a>
     <a class="findme" (click)="toggle()">Find me</a>
   </div>
 </div>

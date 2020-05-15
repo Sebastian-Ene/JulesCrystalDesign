@@ -1,8 +1,14 @@
 .container {
-  padding: 7em 14em;
+  margin: 6em 14em;
   color: whitesmoke;
   text-align: justify;
   max-width: max-content;
+  @media (max-width: 768px) {
+    padding: 6em 7em 0em 7em;
+  }
+  @media (max-width: 425px) {
+    padding: 5em 1em 0em 1em;
+  }
   h1 {
     padding-top: 1em;
   }
@@ -14,16 +20,35 @@
       margin: 0em auto;
       max-width: 100%;
       height: auto;
+      max-height: 550px;
     }
     button {
       position: absolute;
       right: 0px;
-      top: 10em;
+      bottom: 0px;
       z-index: 5;
+      border: none;
+      background-color: rgba(56, 56, 56, 0.5);
+      color: whitesmoke;
+      padding: 2em;
+      &:hover {
+        background-color: rgba(56, 56, 56, 0.9);
+      }
+      &:focus {
+        outline: none;
+      }
+      @media (max-width: 425px) {
+        padding: 1em;
+      }
     }
     p {
       position: absolute;
-      bottom: 5em;
+      bottom: -16px;
+      background-color: rgba(56, 56, 56, 0.5);
+      padding: 2em;
+      @media (max-width: 425px) {
+        padding: 1em;
+      }
     }
   }
 }

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutComponent } from '../about/about.component';
-import { ArtComponent } from '../art/art.component';
 import {
   trigger,
   animate,
@@ -37,7 +35,12 @@ export class NavBarComponent implements OnInit {
 
   toggle() {
     this.isOpen = !this.isOpen;
-    console.log(this.isOpen);
+  }
+  routch() {
+    if (this.isOpen === true) {
+      this.isOpen = !this.isOpen;
+    }
+    window.scroll(0, 0);
   }
 
   ngOnInit(): void {}
