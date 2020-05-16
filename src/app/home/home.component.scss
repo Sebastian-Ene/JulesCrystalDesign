@@ -4,10 +4,10 @@
   text-align: justify;
   max-width: max-content;
   @media (max-width: 768px) {
-    padding: 6em 7em 0em 7em;
+    margin: 6em 7em 0em 7em;
   }
   @media (max-width: 425px) {
-    padding: 5em 1em 0em 1em;
+    margin: 5em 1em 0em 1em;
   }
   h1 {
     padding-top: 1em;
