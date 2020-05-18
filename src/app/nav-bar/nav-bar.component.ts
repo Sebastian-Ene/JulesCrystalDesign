@@ -16,7 +16,7 @@ import {
       state(
         'hide_bar',
         style({
-          transform: 'translate(18em,0em)',
+          transform: 'translate(20em,0em)',
           opacity: '0',
         })
       ),
