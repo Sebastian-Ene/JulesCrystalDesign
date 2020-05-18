@@ -25,14 +25,13 @@
   }
 }
 .flex {
-  max-width: 100%;
-  display: flex;
-
-  img {
-    max-width: 50%;
-    height: auto;
-  }
+  display: grid;
+  grid-template-columns: auto auto;
 }
+img {
+  max-width: 100%;
+}
+
 .limg {
   display: block;
   width: 50%;
