@@ -1,5 +1,6 @@
 .container {
   margin: 8em 14em;
+  padding-bottom: 3em;
   color: white;
   text-align: justify;
   @media (max-width: 768px) {
@@ -7,5 +8,8 @@
   }
   @media (max-width: 425px) {
     margin: 8em 1em 0em 1em;
+  }
+  img {
+    max-width: 100%;
   }
 }

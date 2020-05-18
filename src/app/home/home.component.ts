@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   index = 1;
+  timerId;
   constructor() {}
-  click() {
-    this.index < 4 ? this.index++ : (this.index = 1);
-  }
 
-  ngOnInit(): void {}
+  click() {
+    this.index < 5 ? this.index++ : (this.index = 1);
+    clearInterval(this.timerId);
+    this.timer();
+  }
+  timer() {
+    this.timerId = setInterval(() => {
+      this.index < 5 ? this.index++ : (this.index = 1);
+    }, 3000);
+  }
+  ngOnInit(): void {
+    this.timer();
+  }
 }

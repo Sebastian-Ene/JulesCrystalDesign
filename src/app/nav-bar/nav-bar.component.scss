@@ -30,7 +30,7 @@ img {
       color: rgb(235, 235, 235);
     }
     @media (max-width: 600px) {
-      padding: 3em 0.7em;
+      padding: 3em 0.5em;
     }
   }
 }
@@ -66,4 +66,12 @@ img {
       }
     }
   }
+}
+footer {
+  position: relative;
+  background-color: rgb(129, 129, 129);
+  margin-top: 5em;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
 }
