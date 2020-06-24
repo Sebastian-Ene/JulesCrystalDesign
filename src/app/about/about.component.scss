@@ -3,15 +3,19 @@
   padding-bottom: 3em;
   color: white;
   text-align: justify;
+
   @media (max-width: 768px) {
     margin: 8em 7em 0em 7em;
   }
+
   @media (max-width: 600px) {
     margin: 8em 1em 0em 1em;
   }
+
   @media (min-width: 1441px) {
     font-size: 1.2em;
   }
+
   img {
     max-width: 100%;
     display: block;

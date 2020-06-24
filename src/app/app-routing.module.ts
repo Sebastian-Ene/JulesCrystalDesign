@@ -6,8 +6,8 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent }, // data: {animation:home_ani} },
-  { path: 'about', component: AboutComponent }, // data: {animation: } },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'art', component: ArtComponent },
 ];
 
